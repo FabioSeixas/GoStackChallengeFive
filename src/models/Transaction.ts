@@ -24,12 +24,12 @@ class Transaction {
   @Column('integer')
   value: number;
 
-  @Column('uuid')
-  category_id: string;
+  @Column()
+  category: string;
 
   @ManyToOne(() => Category)
-  @JoinColumn({ name: 'category_id' })
-  category: Category;
+  @JoinColumn({ name: 'category' })
+  categoryProp: Category;
 
   @CreateDateColumn()
   created_at: Date;
