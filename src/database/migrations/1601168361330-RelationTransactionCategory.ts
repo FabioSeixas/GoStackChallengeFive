@@ -7,8 +7,8 @@ export default class RelationTransactionCategory1601168361330
       'transactions',
       new TableForeignKey({
         name: 'TransactionCategory',
-        columnNames: ['category'],
-        referencedColumnNames: ['title'],
+        columnNames: ['category_id'],
+        referencedColumnNames: ['id'],
         referencedTableName: 'categories',
         onDelete: 'SET NULL',
         onUpdate: 'CASCADE',

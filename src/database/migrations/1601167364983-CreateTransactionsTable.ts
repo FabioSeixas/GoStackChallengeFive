@@ -27,8 +27,8 @@ export default class CreateTransactionsTable1601167364983
             type: 'integer',
           },
           {
-            name: 'category',
-            type: 'varchar',
+            name: 'category_id',
+            type: 'uuid',
           },
           {
             name: 'created_at',
