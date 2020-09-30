@@ -34,7 +34,6 @@ class CreateTransactionService {
       transactionCategory = categoriesRepo.create({
         title: category,
       });
-
       await categoriesRepo.save(transactionCategory);
     }
 
